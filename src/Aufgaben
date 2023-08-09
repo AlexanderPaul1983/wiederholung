@@ -1,0 +1,124 @@
+Summe bilden (2 Punkte)
+Gegeben ist folgendes zwei-dimensionales Array
+
+int[][] matrix = new int[2][3];
+matrix[0][0] = 1;
+matrix[0][1] = 2;
+matrix[0][2] = 3;
+
+matrix[1][0] = 4;
+matrix[1][1] = 5;
+matrix[1][2] = 6;
+
+
+Schreibt ein Programm, das die Summe der einzelnen Werte mit einer Schleife berechnet.
+
+Array umdrehen (3 Punkte)
+Schreibt ein Programm, das ein gegebenes Array umdreht. Erstellt hierfür zwei Varianten: (1) erstellt ein neues Array
+und speichert hier die Werte in umgedrehter Reihenfolge, (2) dreht das bestehende Array um ohne ein zusätzliches Array.
+
+Wie oft kommt eine Zahl vor (1 Punkt)
+Schreibt eine Methode, die überprüft, wie oft eine Zahl in einem gegebenen String vorkommt.
+
+Testfälle
+
+In 1123 kommt 1 zwei Mal, 2 ein Mal, und 3 ein Mal vor
+In 9141714 kommt 1 drei Mal, 4 zwei Mal, 7 ein Mal, und 9 ein Mal vor
+
+
+Palindrom prüfen (2 Punkte)
+Schreibt eine Methode, die überprüft, ob ein gegebener String ein Palindrom ist. Ein Palindrom ist ein Wort,
+das von vorne und hinten gelesen dasselbe ergibt. Hier kann die Aufgabe "Array umdrehen" von Übungsblatt 1 eine
+Hilfestellung sein.
+
+Testfälle
+Palindrome sind
+
+a
+aa
+aba
+aabbaa
+otto
+anna
+reliefpfeiler
+
+Keine Palindrome sind
+
+ab
+ba
+abab
+java
+
+
+Längster String (1 Punkt)
+Schreibt ein Program mit einer Methode. Der Methode kann eine beliebige Anzahl an Strings übergeben werden. Die Methode
+gibt dann den längsten der übergebenen Strings zurück. Sollte die maximale Länge auf mehrere String zutreffen, sollte
+der früher übergebene String zurückgegeben werden.
+
+Testfälle
+
+Wenn sometimes, you, eat, the, bear übergeben werden, soll sometimes zurückgegeben werden
+Wenn java, ist, toll übergeben werden, soll java zurückgegeben werden
+
+
+Multiplikation - rekursiv (2 Punkte)
+Schreibt ein Programm, das zwei int Werte multipliziert. Die Multiplikation muss dabei rekursiv über mehrere Additionen
+gelöst werden. Verwendet hierzu eine normale Rekursion und eine Endrekursion.
+
+Snake Case zu Camel Case (3 Punkte)
+Schreibt ein Programm mit einer Methode. Diese Methode wandelt eine Snake Case Notation in Camel Case um. Zum Beispiel,
+soll die Methode this_is_snake_case in thisIsSnakeCase umwandeln. Hier ein paar Tipps:
+
+Die String.split Methode kann verwendet werden, um einen String anhand eines übergebenen Zeichens aufteilen kann
+Die String.toUpperCase Methode ist hilfreich
+Die String.join Methode kann verwendet werden, um Strings aus einem String Array mit einem Zeichen (oder auch keinem
+Zeichen) zu verbinden und einen neuen String zu erstellen
+
+
+Testfälle
+
+
+this_is_snake_case soll zu thisIsSnakeCase umgewandelt werden
+
+name soll zu name umgewandelt werden
+
+hallo_welt soll zu halloWelt umgewandelt werden
+
+
+Primzahlen prüfen (2 Punkte)
+Erstellt ein Programm mit einer Methode, die für eine übergebene Zahl überprüft, ob diese Zahl eine Primzahl ist.
+
+Testfälle
+8, 9, 10, 240, 1024 sind keine Primzahlen
+19, 23, 47, 67, 89 sind Primzahlen
+
+Matrizenmultiplikation (4 Punkte)
+Erstellt ein Programm mit einer Methode, die zwei Matrizen multipliziert. Der Methoden werden beide Matrizen übergeben
+und gibt das Ergebnis zurück. Baut eine Überprüfung in die Methode ein, die überprüft, ob die übergebenen Matrizen
+multipliziert werden können.
+Wie Matrizen multipliziert werden, seht ihr hier
+
+Personen (2 Punkt)
+Erstellt eine Klasse Person. Die Klasse hat folgende Eigenschaften:
+
+Vorname
+Nachname
+E-Mail Adresse
+
+Erstellt für diese Klasse zwei Konstruktoren, einmal für den Fall, dass Vorname und Nachname übergeben werden, und für
+den Fall, dass Vorname, Nachname und E-Mail-Adresse übergeben werden. In den Konstruktoren sollen die Membervariablen
+entsprechend gesetzt werden. Es soll auch die Methode getFullName implementiert werden. Diese Methode gibt den Vornamen
+und Nachnamen mit einem Leerzeichen verbunden als String zurück.
+Die Klasse Person soll zählen, wie viele Instanzen erzeugt wurden.
+Verwendet geeignete Access Modifier.
+
+Bestellung (4 Punkte)
+Erstellt ein Programm, das folgendes Szenario abdeckt. Es sollen Bestellungen abgespeichert werden. Jede Bestellung hat
+eine Bestellnummer. Diese Bestellnummer setzt sich aus B und einer fortlaufenden Nummer zusammen (d.h. die erste
+Bestellung bekommt die Bestellnummer B1, die zweite B2, ...). Diese Bestellnummer wird beim Erstellen einer Bestellung
+automatisch angelegt und nicht per Hand vergeben. Zusätzlich hat eine Bestellung ein Bestelldatum und einen Kommentar.
+Einer Bestellung können bis zu 5 Produkte hinzugefügt werden. Überprüft beim Hinzufügen von Produkten, ob die maximale
+Zahl an Produkten erreicht ist. Ist dies der Fall, soll die Methode false zurückgeben und das Produkt nicht speichern.
+In allen anderen Fällen gibt die Methode true zurück und speichert das Produkt. Produkte haben einen Namen, eine
+Beschreibung und einen Verkaufspreis. Für eine Bestellung muss es möglich sein, den Gesamtpreis einer Bestellung
+zu errechnen. Dieser ergibt sich aus der Summe der Verkaufspreise der hinzugefügten Produkte.
