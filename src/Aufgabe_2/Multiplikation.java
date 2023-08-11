@@ -2,7 +2,7 @@ package Aufgabe_2;
 
 public class Multiplikation {
     public int multiRecursive(int a, int b){
-        int sum = 0;
+        int sum;
         if(b == 0 || a == 0){
             return 0;
 
