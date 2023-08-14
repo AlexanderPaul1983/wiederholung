@@ -21,6 +21,6 @@ public class SnakeToCamel {
 
     public static void main(String[] args) {
         SnakeToCamel s = new SnakeToCamel();
-        System.out.println(s.changeFromSnakeToCamel("hallo"));
+        System.out.println(s.changeFromSnakeToCamel("hallo_welt_to_snake"));
     }
 }
