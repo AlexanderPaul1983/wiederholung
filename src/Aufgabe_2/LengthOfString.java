@@ -1,9 +1,9 @@
 package Aufgabe_2;
 
-public class LeghtOfString {
+public class LengthOfString {
     public static String toMeasureSting(String ... strings) {
-        if(strings == null || strings.length==0){
-            return "Der String ist leer";
+        if(strings == null || strings.length == 0){
+            return "Your String is empty";
         }
         String longestString = " ";
 
@@ -13,7 +13,7 @@ public class LeghtOfString {
                 longestString = s;
             }
         }
-            return longestString;
+            return "The longest word of the string is - " + longestString;
 
     }
 
