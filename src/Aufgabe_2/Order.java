@@ -53,9 +53,9 @@ public class Order extends Product {
     public static void main(String[] args) {
         Order bestellung1 = new Order("Das ist die erste Bestellung");
         Order bestellung2 = new Order("Das ist die zweite Bestellung");
-        Product apfel = new Product("Apfel", "Süß and lecker",2.00);
-        Product birne = new Product("Birne","super tasty", 3.00);
-        Product wurst = new Product("Leberwurst","130 g Schweinefleisch", 4.00);
+        Product apfel = new Product(2.00);
+        Product birne = new Product(3.00);
+        Product wurst = new Product(4.00);
 
 
         bestellung2.addProductToOrder(apfel);

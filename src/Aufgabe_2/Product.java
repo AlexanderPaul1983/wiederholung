@@ -1,8 +1,6 @@
 package Aufgabe_2;
 
 public class Product {
-    private String Name_of_Product;
-    private String Description_of_Product;
     private double Price;
 
     // Die Methoden
@@ -14,10 +12,10 @@ public class Product {
     // Konstructor
 
 
-    public Product(String name_of_Product, String description_of_Product, double price) {
-        this.Name_of_Product = name_of_Product;
-        this.Description_of_Product = description_of_Product;
+    public Product(double price) {
         this.Price = price;
     }
-    public Product(){};
+    public Product(){}
+
+
 }
