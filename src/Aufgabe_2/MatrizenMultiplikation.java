@@ -8,7 +8,7 @@ public class MatrizenMultiplikation {
             // Beispielmatrizen
             int[][] matrixA = {
                     {1, 2},
-                    {3, 4},
+                    {3, 8},
                     {5, 6}
             };
 
@@ -54,6 +54,8 @@ public class MatrizenMultiplikation {
 
             return result;
         }
+
+
     }
 
 

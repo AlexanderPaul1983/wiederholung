@@ -1,0 +1,121 @@
+Fahrenheit zu Celsius/Celsius zu Fahrenheit (1 Punkt)
+Schreibt ein Programm mit den Methoden
+
+
+toCelsius: Methode wandelt eine übergebene Temperatur in Grad Fahrenheit zu Grad Celsius um
+
+toFahrenheit: Methode wandelt eine übergebene Temperatur in Grad Celsius zu Grad Fahrenheit um
+
+Die Umwandlung schaut wie folgt aus:
+
+Temperatur in °C = (Temperatur in °F − 32) / 1,8
+
+
+bzw.
+
+Temperatur in °F = °C * 1,8 + 32
+
+
+
+Testfälle
+
+100 °F = 37,77778 °C
+0 °F = -17,77778 °C
+100 °C = 212 °F
+0 °C = 32 °F
+
+
+Umsatzsteuer berechnen (1 Punkt)
+Schreibt ein Programm mit einer Methode, die aus einem Brutto-Wert die enthaltene Umsatzsteuer berechnet. Übergebt der
+Methode den Brutto-Wert als float und den Umsatzsteuersatz als int.
+
+Testfälle
+
+Bei Brutto-Wert 120.00 und Umsatzsteuersatz 20 beträgt die Umsatzsteuer 20.0
+
+Bei Brutto-Wert 89.90 und Umsatzsteuersatz 10 beträgt die Umsatzsteuer 8,172727272727273
+
+
+
+Passwortgenerator (3 Punkte)
+Erstellt ein Programm, mit einer Methode, die zufällige Passwörter erstellt. Der Methode wird die Länge des Passwortes
+übergeben. Das Passwort soll aus Sonderzeichen, Groß- und Kleinbuchstaben und Zahlen enthalten.
+
+Testfälle
+
+8, 9, 10, 240, 1024 sind keine Primzahlen
+19, 23, 47, 67, 89 sind Primzahlen
+
+
+Cäsarverschlüsselung (4 Punkte)
+Schreibt ein Programm mit dem man Text mit der Cäsarverschlüsselung ver- bzw. entschlüsseln kann. Bei der
+Cäsarverschlüsselung wird jeder Buchstabe beim Verschlüsseln um eine gegebene Zahl (Schlüssel) an Stellen im Alphabet
+nach vorne, beim Entschlüsseln nach hinten verschoben. Um es einfach zu halten, berücksichtigt nur Großbuchstaben,
+Leerzeichen werden nicht ver- bzw. entschlüsselt. Implementiert folgende Methoden:
+
+
+encrypt: Verschiebt einen übergebenen String um die übergebenen Stellen im Alphabet nach vorne
+
+decrypt: Verschiebt einen übergebenen String um die übergebenen Stellen im Alphabet nach hinten
+
+
+Testfälle
+
+
+HALLO WELT mit Schlüssel 3 wird zu KDOOR ZHOW verschlüsselt
+
+KM PZKXYJNS mit Schlüssel 5 wird zu FH KUFSTEIN entschlüsselt
+
+
+Buffer oder nicht (2 Punkte)
+Macht einen Laufzeitvergleich von einem gepufferten und ungepufferten Schreibstream. Ob ihr hier einen byte- oder
+zeichenbasierten Stream verwendet ist egal. Schreibt einen String öfters in eine Datei und misst, wie lange es gedauert hat, bis die Datei geschrieben wurde. Verwendet unterschiedliche lange Strings und notiert die Laufzeitunterschiede.
+Die Laufzeit könnt ihr unter anderem wie folgt messen:
+
+        Instant start=Instant.now();
+
+        // do some work here
+
+        long duration=Duration.between(start, Instant.now()).toMillis();
+
+
+
+Matrizenmultiplikation mit Exception (1 Punkt)
+Erweitert das Programm zur Multiplikation von Matrizen. Wenn zwei inkompatible Matrizen übergeben werden, soll eine
+ Exception geworfen werden, die in der aufrufenden Methode abgefangen werden muss.
+
+Array vergrößern/verkleinern (2 Punkte)
+Erstellt eine Funktion, die ein übergebenes int Array um einen gegebenen Wert vergrößert bzw. verkleinert
+(wenn der gegebene Wert negativ). Wird das Array vergrößert, werden die zusätzlichen Stellen im neuen Array mit -1 aufgefüllt.
+
+Testfälle
+
+
+[1, 2, 3, 4] und 2 gibt [1, 2, 3, 4, -1, -1] zurück
+
+[4, 3, 2, 1] und -1 gibt [4, 3, 2] zurück
+
+
+Arrays konkatenieren (1 Punkt)
+Erstellt eine Funktion, die zwei übergebene int Arrays konkateniert.
+
+Testfälle
+
+
+[1, 2, 3, 4] und [5, 6, 7] werden zu [1, 2, 3, 4, 5, 6, 7]
+
+
+[-3, -2, -1] und [1, 2, 3] werden zu [-3, -2, -1, 1, 2, 3]
+
+
+
+Array Filter (2 Punkte)
+Schreibt eine Funktion, der ein int Array und eine Zahl übergeben wird. Die Funktion gibt ein int Array zurück, dessen
+Werte größer sind als die übergebene Zahl.
+
+Testfälle
+
+
+[1, -4, 0, -3, -2, 10, 3, 5] und -1 gibt [1, 0, 10, 3, 5] zurück.
+
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10] und 5 gibt [6, 7, 8, 9, 10] zurück.
