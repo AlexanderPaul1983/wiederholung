@@ -1,5 +1,7 @@
 package Aufgabe_2;
 
+import Aufgabe_3.Passwortgenerator;
+
 public class LengthOfString {
     public static String toMeasureSting(String ... strings) {
         if(strings == null || strings.length == 0){
@@ -19,6 +21,7 @@ public class LengthOfString {
 
     public static void main(String[] args) {
         System.out.println(toMeasureSting("Java", "ist", "toll"));
+        Passwortgenerator.toMakePassword(5);
     }
     }
 

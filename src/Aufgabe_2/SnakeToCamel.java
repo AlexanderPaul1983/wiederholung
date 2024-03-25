@@ -2,6 +2,7 @@ package Aufgabe_2;
 
 import java.util.Arrays;
 
+
 public class SnakeToCamel {
     public String changeFromSnakeToCamel(String snakeString){
         String[] dividedWords = snakeString.split("_");

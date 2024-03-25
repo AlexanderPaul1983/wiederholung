@@ -11,6 +11,8 @@ public class Passwortgenerator {
     }
 
     public static void main(String[] args) {
-        toMakePassword(10);
+
+
+        System.out.println("HelloWord".length());
     }
 }
